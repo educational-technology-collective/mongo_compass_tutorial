@@ -28,7 +28,7 @@ At this point you should have a working version of the MongoDB Compass GUI insta
 
 Watch the video to see me walk through the steps to connect to the mongo service on nellodee.
 
-
+https://www.youtube.com/embed/U6IfEkCouUY
 
 1. Click `New Connection` button
 2. Click `Advanced Connection Options` expansion button
