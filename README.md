@@ -15,5 +15,34 @@ If you want to run/test/use MongoDB on your local system, you will need to follo
 
 ## Starting Mongod Service on Nellodee
 
-- First check to see if the mongod service is already running by using the following command in the terminal `service mongod status`
-- 
+* First check to see if the mongod service is already running by using the following command in the terminal `service mongod status`
+    ![Mongo Status Check Ubuntu](/assets/mongo_status_ubuntu.png)
+
+* If the `Active` property says "active (running)" then you can skip to the next step.
+
+* If the `Active` property says "inactive (dead)" then you can run the following command `sudo systemctl start mongod`
+
+## Connecting MongoDB Compass to Nellodee
+
+At this point you should have a working version of the MongoDB Compass GUI installed and opened and confirmed that the mongo service has started on nellodee.
+
+Watch the video to see me walk through the steps to connect to the mongo service on nellodee.
+
+
+
+1. Click `New Connection` button
+2. Click `Advanced Connection Options` expansion button
+3. Choose `Proxy/SSH` tab
+4. Fill in all four fields: 
+    - SSH Hostname: `nellodee.si.umich.edu`
+    - SSH Port: `22`
+    - SSH Username: `your umich uniqname`
+    - SSH Password: `password associated with your uniqname`
+5. Click `Save & Connect`
+6. You will be prompted to choose a color and enter a name for your connection
+
+At this point you should be connected to the running mongo service on nellodee and see a list of the databases stored in mongo on nellodee. If you are already familiar with MongoDB queries then you should be good to go. 
+
+If not, I will link a cheat sheet to standard mongo queries to get you started.
+
+[MongoDB Queries](https://www.mongodb.com/docs/compass/current/query/filter/)
